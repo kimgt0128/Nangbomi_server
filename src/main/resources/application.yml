@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: refri
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/refri?useSSL=false&useUnicode=true&character_set_server=utf8mb4&serverTimezone=Asia/Seoul
+    username: root
+    password: 0000
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        show-sql: true # System.out으로 출력합니다.
+        highlight_sql: true # SQL 출력을 ANSI escape codes를 사용하여 색을 부여합니다.
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+      #schema-locations: classpath:schema.sql
+      #data-locations: classpath:data.sql
+
+server:
+  servlet:
+    encoding:
+      force-response: true #한글 깨짐 현상
