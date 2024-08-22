@@ -38,7 +38,7 @@ public class Food {
     @Column(name = "comment")
     private String comment;
 
-    @Convert()
+    @Convert(converter = FoodPositionConverter.class)
     @Column(name = "food_position", nullable = false)
     private FoodPosition foodPosition;
 
