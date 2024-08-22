@@ -38,10 +38,9 @@ public class Food {
     @Column(name = "comment")
     private String comment;
 
-    @ColumnDefault("'Refrigerator'")
-    @Lob
+    @Convert()
     @Column(name = "food_position", nullable = false)
-    private String foodPosition;
+    private FoodPosition foodPosition;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "refri_id", nullable = false)
