@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Instant;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class UserDtoTest {
 
@@ -22,8 +21,8 @@ class UserDtoTest {
         //when
 
         //then
-        assertThat(expected.getName()).as("Check typeName").isEqualTo(name);
-        assertThat(expected.getNickname()).as("Check typeNickname").isEqualTo(nickname);
+        assertThat(expected.getName()).as("Check userName").isEqualTo(name);
+        assertThat(expected.getNickname()).as("Check userNickname").isEqualTo(nickname);
         assertThat(expected.getCreatedTime()).as("Check typeCreatedTime").isEqualTo(createdTime);
         assertThat(expected.getUpdatedTime()).as("Check typeUpdatedTime").isEqualTo(updatedTime);
     }
