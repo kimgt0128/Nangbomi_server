@@ -1,4 +1,4 @@
-package com.example.nangbomi.food;
+package com.example.nangbomi.food.entity;
 
 
 import lombok.Getter;
