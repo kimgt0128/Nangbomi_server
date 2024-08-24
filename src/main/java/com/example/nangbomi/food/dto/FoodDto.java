@@ -9,9 +9,12 @@ import lombok.*;
 @Getter
 @Builder
 public class FoodDto {
+    private String foodName;
     private Instant registerDate;
     private Instant expirationDate;
     private Integer quantity;
     private String comment;
     private FoodPosition foodPosition;
+
+
 }
