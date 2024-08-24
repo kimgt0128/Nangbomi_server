@@ -12,6 +12,7 @@ class FoodTypeDtoTest {
         //given
         String typeName = "fruit";
         String typeCode = "A1002";
+        //이후에 Duration 타입의 변수로 변환 후 다시 테스트
         LocalDate expirationPeriod = null;
         String information = "과일은 통상적으로 냉장 보관을 해야 합니다.";
         FoodTypeDto expected = new FoodTypeDto(typeName, typeCode, expirationPeriod, information);

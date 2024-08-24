@@ -4,6 +4,8 @@ import com.example.nangbomi.food.entity.FoodPosition;
 import java.time.Instant;
 import lombok.*;
 
+@RequiredArgsConstructor
+@AllArgsConstructor
 @Getter
 @Builder
 public class FoodDto {
