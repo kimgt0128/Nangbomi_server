@@ -1,17 +1,18 @@
-package com.example.nangbomi.food;
+package com.example.nangbomi.food.entity;
 
-import com.example.nangbomi.food_type.FoodType;
-import com.example.nangbomi.refri.Refri;
+import com.example.nangbomi.food_type.entity.FoodType;
+import com.example.nangbomi.refri.entity.Refri;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.time.Instant;
 
 @Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
+@Builder
 @Table(name = "food")
 public class Food {
     @Id

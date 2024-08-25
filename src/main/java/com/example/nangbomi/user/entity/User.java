@@ -1,19 +1,18 @@
-package com.example.nangbomi.user;
+package com.example.nangbomi.user.entity;
 
-import com.example.nangbomi.refri.Refri;
+import com.example.nangbomi.refri.entity.Refri;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.time.Instant;
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
 @Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
+@Builder
 @Table(name = "user")
 public class User {
     @Id

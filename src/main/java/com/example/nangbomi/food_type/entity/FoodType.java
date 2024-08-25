@@ -1,16 +1,17 @@
-package com.example.nangbomi.food_type;
+package com.example.nangbomi.food_type.entity;
 
-import com.example.nangbomi.food.Food;
+import com.example.nangbomi.food.entity.Food;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
+@Builder
 @Table(name = "food_type")
 public class FoodType {
     @Id

@@ -1,18 +1,18 @@
-package com.example.nangbomi.refri;
+package com.example.nangbomi.refri.entity;
 
-import com.example.nangbomi.food.Food;
-import com.example.nangbomi.user.User;
+import com.example.nangbomi.food.entity.Food;
+import com.example.nangbomi.user.entity.User;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.time.Instant;
 import java.util.List;
-
 @Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
+@Builder
 @Table(name = "refri")
 public class Refri {
     @Id
